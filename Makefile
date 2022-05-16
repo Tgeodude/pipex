@@ -4,7 +4,7 @@ MAKE		= make
 
 #COMP USE CC INSTEAD?!?!??!
 CC			= cc
-CFLAGS		= -Wall -Wextra -Werror -g
+CFLAGS		=  -g
 
 #LIBFT
 LIBFT_DIR	= libft
@@ -13,23 +13,23 @@ LIBFT_MAKE	= cd $(LIBFT_DIR) && $(MAKE)
 LIBFT_INC	= -L libft -lft
 
 #SRC
-SRC_DIR		= src
-SRC			= $(SRC_DIR)/pipex.c \
-				$(SRC_DIR)/parse.c \
+SRC_DIR		= Src
+SRC			= $(SRC_DIR)/pipex_main.c \
+				$(SRC_DIR)/pipex_error.c \
 
-SRC_BON_DIR	= src_bonus
+SRC_BON_DIR	= Source_bonus
 SRC_BON		= $(SRC_BON_DIR)/pipex_bonus.c  \
 
 #INC
-INC_DIR		= inc
+INC_DIR		= Inc
 INC			= $(INC_DIR) pipex.h
-INC_BON_DIR		= inc_bonus
+INC_BON_DIR		= Include_bonus
 INC_BON		= $(INC_BON_DIR) pipex_bonus.h
 
 #OBJ
-OBJ_DIR		= obj
+OBJ_DIR		= Obj
 OBJ			= $(patsubst $(SRC_DIR)%, $(OBJ_DIR)%, $(SRC:.c=.o))
-OBJ_BON_DIR		= obj_bonus
+OBJ_BON_DIR		= Object_bonus
 OBJ_BON		= $(patsubst $(SRC_BON_DIR)%, $(OBJ_BON_DIR)%, $(SRC_BON:.c=.o))
 
 #OBJ_INC

@@ -6,10 +6,5 @@
 # include <errno.h>
 # include "../libft/libft.h"
 
-typedef struct s_data {
-    
-}
-
-void    parsing_file(int argc, char **argv);
 
 #endif
