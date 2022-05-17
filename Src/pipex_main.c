@@ -29,8 +29,8 @@ void    check_path(char **env, t_var *vars)
 
 void    child1(t_var *vars)
 {
-    cmd_argv_parse(vars);
-    
+    cmd_argv_parse(vars, 1);
+
 }
 
 void    process_part(t_var *vars)
