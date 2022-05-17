@@ -16,5 +16,16 @@ typedef struct s_var {
     
 }   t_var;
 
+typedef struct s_split {
+    int i;
+    int j;
+    int c;
+    int len;
+    int word_counter;
+}   t_split;
+
+
+char	**ft_split_ppx(char *str, char c);
+
 
 #endif
