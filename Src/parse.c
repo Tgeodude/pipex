@@ -1,6 +1,6 @@
 #include "pipex.h"
 
-void    cmd_argv_parse(t_var vars, char *argv_str, int cmd_num)
+void    cmd_argv_parse(t_var *vars, char *argv_str, int cmd_num)
 {
     char **buffer_str;
 

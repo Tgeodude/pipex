@@ -16,6 +16,9 @@ LIBFT_INC	= -L libft -lft
 SRC_DIR		= Src
 SRC			= $(SRC_DIR)/pipex_main.c \
 				$(SRC_DIR)/pipex_error.c \
+				$(SRC_DIR)/parse.c \
+				$(SRC_DIR)/ft_split_pipex.c \
+
 
 SRC_BON_DIR	= Source_bonus
 SRC_BON		= $(SRC_BON_DIR)/pipex_bonus.c  \

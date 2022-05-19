@@ -1,7 +1,7 @@
-#include "pipex.h"
+#include git "pipex.h"
 
 void    printerror(char *str)
 {
-    perror(str);
+    write(2, str, ft_strlen(str));
     exit(0);
 }
