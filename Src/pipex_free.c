@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   pipex_free.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tgeodude <tgeodude@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/05/24 12:26:37 by tgeodude          #+#    #+#             */
+/*   Updated: 2022/05/24 12:26:52 by tgeodude         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "pipex.h"
 
-void    free_parent_error(char *str, t_var *vars)
+void	free_parent_error(char *str, t_var *vars)
 {
 	int	i;
 
@@ -11,12 +23,12 @@ void    free_parent_error(char *str, t_var *vars)
 			free(vars->my_path[i++]);
 		free(vars->my_path);
 	}
-    printerror(str);
+	printerror(str);
 }
 
-void    free_child_error(char *str, t_var *vars, int child_num)
+void	free_child_error(char *str, t_var *vars, int child_num)
 {
-    int	i;
+	int	i;
 
 	i = 0;
 	if (child_num == 1 && vars->argv_cmd1)

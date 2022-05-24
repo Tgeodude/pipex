@@ -1,7 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   pipex_error.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tgeodude <tgeodude@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/05/24 12:27:09 by tgeodude          #+#    #+#             */
+/*   Updated: 2022/05/24 12:27:50 by tgeodude         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "pipex.h"
 
-void    printerror(char *str)
+void	printerror(char *str)
 {
-    write(2, str, ft_strlen(str));
-    exit(0);
+	write(2, str, ft_strlen(str));
+	exit(0);
 }

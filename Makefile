@@ -16,9 +16,10 @@ LIBFT_INC	= -L libft -lft
 SRC_DIR		= Src
 SRC			= $(SRC_DIR)/pipex_main.c \
 				$(SRC_DIR)/pipex_error.c \
-				$(SRC_DIR)/parse.c \
-				$(SRC_DIR)/ft_split_pipex.c \
+				$(SRC_DIR)/pipex_parse.c \
+				$(SRC_DIR)/pipex_ft_split.c \
 				$(SRC_DIR)/pipex_free.c \
+				$(SRC_DIR)/pipex_path.c \
 
 #INC
 INC_DIR		= Inc
