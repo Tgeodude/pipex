@@ -18,16 +18,11 @@ SRC			= $(SRC_DIR)/pipex_main.c \
 				$(SRC_DIR)/pipex_error.c \
 				$(SRC_DIR)/parse.c \
 				$(SRC_DIR)/ft_split_pipex.c \
-
-
-SRC_BON_DIR	= Source_bonus
-SRC_BON		= $(SRC_BON_DIR)/pipex_bonus.c  \
+				$(SRC_DIR)/pipex_free.c \
 
 #INC
 INC_DIR		= Inc
 INC			= $(INC_DIR) pipex.h
-INC_BON_DIR		= Include_bonus
-INC_BON		= $(INC_BON_DIR) pipex_bonus.h
 
 #OBJ
 OBJ_DIR		= Obj
@@ -59,17 +54,10 @@ $(OBJ)		:	| $(OBJ_DIR)
 $(OBJ_DIR):
 			mkdir -p $(OBJ_DIR)
 
-$(OBJ_BON)		:	| $(OBJ_BON_DIR)
-$(OBJ_BON_DIR):
-			mkdir -p $(OBJ_BON_DIR)
 
 
 #RULES
 all:	$(NAME)
-
-bonus:	fclean $(NAME) $(OBJ_BON)
-		$(LIBFT_MAKE)
-		$(CC) $(OBJ_BON) $(LIBFT_INC) -o $(NAME)
 
 clean:
 		${RM_DIR} ${OBJ_DIR}

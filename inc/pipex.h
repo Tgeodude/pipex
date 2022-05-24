@@ -39,5 +39,7 @@ char	**ft_split_ppx(char *str, char c);
 void    cmd_argv_parse(t_var *vars, char *argv_str, int cmd_num);
 void	word_counter_ppx(char *str, char c, t_split *s);
 void    printerror(char *str);
+void    free_parent_error(char *str, t_var *vars);
+void    free_child_error(char *str, t_var *vars, int child_num);
 
 #endif

@@ -11,12 +11,12 @@ void    cmd_argv_parse(t_var *vars, char *argv_str, int cmd_num)
         exit(0);
     if (cmd_num == 1)
     {
-        vars->cmd1 = buffer_str;
-        vars->argv_cmd1 = *buffer_str;
+        vars->cmd1 = *buffer_str;
+        vars->argv_cmd1 = buffer_str;
     }
     else if (cmd_num == 2)
     {
-        vars->cmd2 = buffer_str;
+        vars->cmd2 = *buffer_str;
         vars->argv_cmd2 = buffer_str;
     }
 }
